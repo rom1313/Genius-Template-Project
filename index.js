@@ -14,6 +14,7 @@ let boutton = genius.element('button', '#bouttontest')
 // todo -------------- Modification du textContent des éléments HTML --------
 
 genius.textContent('Clique-moi', '#bouttontest')
+genius.textContent(genius.pourcent(document.querySelector('#inputrange').max, document.querySelector("#inputrange").value, 'string'), '#pourcent')
 
 // todo -------------- Création d'évènements --------------------------------
 // event boutton
@@ -21,12 +22,16 @@ genius.event('#bouttontest', 'click', (e) => {
     console.log('boutton appuyé !');
     p.classList.add('heureanimation')
 })
-// event input
-genius.event('#input', 'keyup', (e) => {
+// event input text
+genius.event('#input', 'input', (e) => {
     let text = e.target.value
     genius.textContent(text, '#text')
 })
-
+// event input range
+genius.event('#inputrange', 'input', (e) => {
+    let text = e.target.value
+    genius.textContent(genius.pourcent(document.querySelector('#inputrange').max, text, 'string'), '#pourcent')
+})
 // todo -------------- Heure dynamique ---------------------------------------
 //on créer la fonction 
 function heureDynamique() {

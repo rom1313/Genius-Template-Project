@@ -90,3 +90,23 @@ body {
 
 
 }
+
+#blockpourcent {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    height: 55px;
+    width: fit-content;
+}
+
+#pourcent {
+    color: aqua;
+}
+
+#inputrange{
+ 
+    color: beige;
+    cursor: ew-resize;
+}
