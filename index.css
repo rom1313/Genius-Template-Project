@@ -21,9 +21,6 @@ html {
 
 body {
     background-color: rgb(46, 46, 46);
-    margin: auto;
-    width: 100%;
-    height: 100vh;
 
 
 }
@@ -41,14 +38,55 @@ body {
     animation: grossir 0.2s ease-in-out infinite alternate;
 }
 
-#bouttontest{
+#bouttontest {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 88%;
+    left: 90%;
     transform: translate(-50%, -50%);
-}
-#text{
-    color: brown;
-    font-size: 55px;
     background-color: black;
+    color: aqua;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#bouttontest:active {
+    color: yellow;
+}
+
+#text {
+    color: rgb(0, 234, 255);
+    margin: 25px;
+    font-size: 2vw;
+
+}
+
+#input {
+    position: absolute;
+    top: 5%;
+    left: 200px;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px;
+    outline: none;
+    height: 10px;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+#blocktext {
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    word-wrap: break-word;
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 15px;
+
+
 }
