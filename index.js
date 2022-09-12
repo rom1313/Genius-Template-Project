@@ -40,4 +40,7 @@ function heureDynamique() {
 }
 
 //on appel "l'animation"
-requestAnimationFrame(heureDynamique) 
+requestAnimationFrame(heureDynamique)
+// todo -------------------------------------- Exemple de fonctions (tableaux) nouveauté version 1.0.50 ---------------- 
+
+genius.sansDoublon(genius.trierNum([2, 3, 8, 1, 8, 3], 'croissant'), 'log')
